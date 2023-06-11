@@ -53,7 +53,7 @@ public class RecyclerViewConfiguracion {
          * @param parent
          */
         public TemaItemView(ViewGroup parent){
-            super(LayoutInflater.from(context).inflate(R.layout.activity_vista_contacto, parent, false));
+            super(LayoutInflater.from(context).inflate(R.layout.activity_vista_tema, parent, false));
             numero = itemView.findViewById(R.id.numero_tema);
             nombre = itemView.findViewById(R.id.nombre_tema);
             repasos = itemView.findViewById(R.id.repasos_tema);

@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
     private Button boton_entrar, boton_nuevo_usu;
     private EditText correo, password;
     private FirebaseAuth firebaseAuth;
-    private ImageView img;
 
 
 
@@ -46,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*
+        /**
+        Inicia los datos como ejemplo de un conjunto de Cuerpos, Especialidades y Temas correspondientes
         cargarDatos();
          */
 
