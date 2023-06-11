@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "356076033984",
+    "project_id": "oposmasterapp",
+    "storage_bucket": "oposmasterapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356076033984:android:72cbe4ff88866002d71a25",
+        "android_client_info": {
+          "package_name": "com.damdos.oposmasterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356076033984-dg612i85t4huj3dfjq9fuf95fi1r385l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbhaPO0AfSlTZuEw-Jt4vH1-OKeomjrxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356076033984-dg612i85t4huj3dfjq9fuf95fi1r385l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

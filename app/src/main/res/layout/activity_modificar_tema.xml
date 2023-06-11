@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SCREEN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificarTema"
+    tools:layout_editor_absoluteX="-10dp"
+    tools:layout_editor_absoluteY="26dp">
+
+    <Button
+        android:id="@+id/boton_menos"
+        style="@style/BUTTON"
+        android:layout_width="50dp"
+        android:elevation="8dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/boton_llamar"
+        android:text="@string/boton_menos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toStartOf="@+id/boton_mas"
+        app:layout_constraintStart_toEndOf="@+id/contador_repasos"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_tema" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/boton_borrar_tema"
+
+            style="@style/BUTTON"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/boton_cancelar"
+            android:text="@string/boton_borrar"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteY="843dp" />
+
+        <Button
+            android:id="@+id/boton_cancelar_tema"
+            style="@style/BUTTON2"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:text="@string/boton_cancelar_contacto_existente"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="843dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"/>
+
+
+
+        <Button
+            android:id="@+id/boton_guardar_tema"
+            style="@style/BUTTON"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/boton_llamar"
+            android:text="@string/boton_guardar"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="291dp"
+            tools:layout_editor_absoluteY="843dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nuemero_tema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/TEXT"
+        android:text="@string/titulo_temas"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_tema"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/brown_border"
+        android:gravity="center"
+        android:outlineProvider="bounds"
+        android:padding="5dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_anotacion">
+
+        <ScrollView
+            android:id="@+id/scrollView_nota"
+            style="@style/NOTAS"
+            android:outlineProvider="bounds"
+            android:elevation="8dp"
+            android:layout_width="340dp"
+            android:layout_height="270dp"
+            android:layout_margin="18dp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="507dp">
+
+            <EditText
+                android:id="@+id/texto_anotacion_cal"
+                style="@style/NOTAS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/anotacion_contenido"
+                android:inputType="textMultiLine"
+                android:maxLines="100"
+                android:scrollbars="vertical"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="591dp" />
+
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        style="@style/TEXT"
+        android:id="@+id/titulo_anotacion"
+        android:layout_width="358dp"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:text="@string/label_anotaciones"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        style="@style/TEXT"
+        android:id="@+id/titulo_tema"
+        android:layout_width="358dp"
+        android:layout_height="79dp"
+        android:gravity="center"
+        android:text="@string/titulo_contenido_tema"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/contador_repasos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nuemero_tema" />
+
+    <TextView
+        style="@style/TEXT"
+        android:id="@+id/contador_repasos"
+        android:layout_width="197dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:text="@string/label_repasos"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/texto_evaluacion"
+        app:layout_constraintEnd_toStartOf="@+id/boton_menos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_tema" />
+
+    <Button
+        android:id="@+id/boton_mas"
+        style="@style/BUTTON"
+        android:layout_width="50dp"
+        android:elevation="8dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/boton_llamar"
+        android:text="@string/boton_mas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boton_menos"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_tema" />
+
+    <TextView
+        style="@style/TEXT"
+        android:id="@+id/texto_evaluacion"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/label_ev_tem"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_anotacion"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contador_repasos" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/SpinnerStyle"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/boton_llamar"
+        android:entries="@array/evaluacion_opciones"
+        android:prompt="@string/evaluacion_prompt"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_anotacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/texto_evaluacion"
+        app:layout_constraintTop_toBottomOf="@+id/boton_menos"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

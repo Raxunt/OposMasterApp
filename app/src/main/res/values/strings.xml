@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">OposMaster</string>
+    <string name="app_name_main">Agiliza tus métodos de estudio</string>
+    <string name="titulo">INICIO DE SESIÓN</string>
+    <string name="correo">Correo...</string>
+    <string name="password">Contraseña...</string>
+    <string name="boton_login">ENTRAR</string>
+    <string name="boton_nuevousuario">CREAR NUEVA CUENTA</string>
+    <string name="titulo_registro">REGISTRO NUEVO USUARIO</string>
+    <string name="boton_registrar">REGISTRAR</string>
+    <string name="boton_cancelar">CANCELAR</string>
+    <string name="nombre">Nombre...</string>
+    <string name="boton_pruebas">PRUEBAS</string>
+    <string name="boton_eliminar_contacto">ELIMINAR CONTACTO</string>
+    <string name="titulo_agenda">TEMARIO</string>
+    <string name="boton_guardar_contacto">GUARDAR</string>
+    <string name="nombre_contacto">Nombre...</string>
+    <string name="direccion_contacto">Dirección...</string>
+    <string name="correo_contacto">Correo...</string>
+    <string name="telefono_contacto">Teléfono...</string>
+    <string name="boton_modificar_contacto">MODIFICAR CONTACTO</string>
+    <string name="nombre_tema_vista">Nombre tema: </string>
+    <string name="numero_tema_vista">Número: </string>
+    <string name="repasos_tema_vista"> Repasos: </string>
+    <string name="evaluacion_tema_vista"> Evaluación: </string>
+    <string name="nota_tema_vista"> Nota: </string>
+    <string name="menu_crono_pomodoro">Crono</string>
+    <string name="boton_guardar_contacto_existente">MODIFICAR</string>
+    <string name="boton_borrar_contacto_existente">BORRAR</string>
+    <string name="boton_cancelar_contacto_existente">CANCELAR</string>
+    <string name="boton_llamar">LLAMAR</string>
+    <string name="menu_salir">Cerrar sesión</string>
+    <string name="menu_opcion1">Cerrar sesión</string>
+    <string name="menu_opcion2">Cerrar sesión</string>
+    <string name="menu_opcion3">Cerrar sesión</string>
+
+    <string name="fecha_seleccionada">Seleccione una fecha antes de continuar</string>
+
+    <string name="menu_prueba">Pruebas</string>
+    <string name="estilo">ESTILO</string>
+    <string name="alias_contacto">Alias...</string>
+    <string name="evaluacion_label">Evaluación: ‣</string>
+    <string name="repasos_label">Nº repasos: </string>
+    <string name="crono">00:00</string>
+
+    <string name="menu_calendario">Calendario</string>
+    <string name="boton_cancelar_nota">CANCELAR</string>
+    <string name="boton_guardar_nota">GUARDAR</string>
+    <string name="boton_seleccionar_fecha">SELECCIONAR FECHA</string>
+    <string name="boton_mostrar_notas">MOSTRAR NOTAS</string>
+    <string name="titulo_nota">Titulo...</string>
+    <string name="contenido_nota">Contenido...</string>
+    <string name="title_activity_registro">Registro</string>
+    <string name="boton_borrar">BORRAR</string>
+    <string name="boton_guardar">GUARDAR</string>
+    <string name="anotacion_contenido">Escibe notas para recordar datos o ayudas de interés...</string>
+    <string name="titulo_nota_planificador">Notas</string>
+    <string name="boton_reiniciar">REINICIAR</string>
+    <string name="boton_pausar">PAUSAR</string>
+    <string name="boton_empezar">EMPEZAR</string>
+    <string name="titulo_crono_pruebas">Crono</string>
+    <string name="boton_temas_est">TEMAS ESTUDIADOS</string>
+    <string name="boton_temas_tot">TEMAS TOTALES</string>
+    <string name="titulo_simular">Simular sorteo</string>
+    <string name="label_prob">Probabilidad:</string>
+    <string name="label_bolas">Bolas sorteadas:</string>
+    <string name="label_bol_ayuda">Arrastra la barra para cambiar el número de bolas</string>
+    <string name="label_cant_bol">Cantidad de bolas para el sorteo</string>
+    <string name="label_tem_ayuda">Arrastra la barra para cambiar el número de temas</string>
+    <string name="label_cant_tem">Cantidad de temas estudiados</string>
+    <string name="titulo_tem_est">Temas estudiados:</string>
+    <string name="titulo_tem_tot">Temas totales:</string>
+    <string name="boton_salir">SALIR</string>
+    <string name="titulo_temas">TEMA []</string>
+    <string name="titulo_contenido_tema">Título tema...</string>
+    <string name="label_repasos">Repasos: []</string>
+    <string name="boton_mas">+</string>
+    <string name="boton_menos">-</string>
+    <string name="label_ev_tem">Evaluación del tema: </string>
+    <string name="label_anotaciones">Anotaciones</string>
+    <string name="prueba">Prueba</string>
+    <string name="titulo_dialogo_temas">Temas sorteados:</string>
+    <string-array name="evaluacion_opciones">
+        <item>Pendiente</item>
+        <item>Excelente</item>
+        <item>Bien</item>
+        <item>Normal</item>
+        <item>Regular</item>
+        <item>Repasar</item>
+    </string-array>
+    <string name="evaluacion_prompt">Selecciona una evaluación para el tema</string>
+
+    <string-array name="cuerpos_opciones">
+        <item>Profesores de enseñanza secundaria</item>
+        <item>Profesores técnicos de formación profesional</item>
+
+    </string-array>
+    <string name="cuerpos_prompt">Seleccione el cuerpo al que pertenece</string>
+
+    <string-array name="especialidades_fp_opciones">
+        <item>Sistemas y aplicaciones informáticas</item>
+        <item>Instalaciones electrotécnicas</item>
+
+    </string-array>
+
+
+    <string-array name="especialidades_secundaria_opciones">
+        <item>Informática</item>
+        <item>Música</item>
+
+    </string-array>
+    <string name="especialidades_prompt">Seleccione el cuerpo al que pertenece</string>
+    <string name="cuerpo_fp">Profesores técnicos de formación profesional</string>
+    <string name="cuerpo_secundaria">Profesores de enseñanza secundaria</string>
+    <string name="especialidad_musica">Música</string>
+    <string name="especialidad_informatica">Informática</string>
+
+    <string name="especialidad_sistemas">Sistemas y aplicaciones informáticas</string>
+    <string name="especialidad_elec">Instalaciones electrotécnicas</string>
+
+
+</resources>

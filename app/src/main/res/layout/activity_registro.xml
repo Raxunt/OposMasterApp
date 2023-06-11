@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/titulo_registro"
+        style="@style/TEXT"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/titulo_registro"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_registro" />
+
+    <EditText
+        android:id="@+id/correoNuevo"
+        style="@style/TEXT"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:minHeight="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordNuevo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/passwordNuevo"
+        style="@style/TEXT"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/label_cuerpo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoNuevo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/nombre"
+        style="@style/TEXT"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/correoNuevo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_registro" />
+
+    <TextView
+        android:id="@+id/label_cuerpo"
+        style="@style/TEXT"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:text="Cuerpo:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_cuerpo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordNuevo" />
+
+    <Spinner
+        android:id="@+id/spinner_cuerpo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/prueba"
+        app:layout_constraintBottom_toTopOf="@+id/label_especialidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        android:entries="@array/cuerpos_opciones"
+        android:prompt="@string/cuerpos_prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_cuerpo" />
+
+    <TextView
+        android:id="@+id/label_especialidad"
+        style="@style/TEXT"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:text="Especialidad:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_especialidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_cuerpo" />
+
+    <Spinner
+        android:id="@+id/spinner_especialidad"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/prueba"
+        app:layout_constraintBottom_toTopOf="@+id/boton_registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        android:entries="@array/especialidades_secundaria_opciones"
+        android:prompt="@string/especialidades_prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_especialidad" />
+
+    <Button
+        android:id="@+id/boton_registrar"
+        style="@style/BUTTON"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/boton_registrar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boton_cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_especialidad" />
+
+    <Button
+        android:id="@+id/boton_cancelar"
+        style="@style/BUTTON2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="108dp"
+        android:text="@string/boton_cancelar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_registrar" />
+
+    <ImageView
+        android:id="@+id/img_registro"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        app:tint="#829585"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>

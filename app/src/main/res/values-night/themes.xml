@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OposMasterApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FEB06A</item>
+        <item name="colorPrimaryVariant">#4E5A55</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="NOTAS">
+        <item name="android:background">#084C0C</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">#CBE9FD</item>
+    </style>
+
+    <style name="SCREEN">
+        <item name="android:background">#4E5A55</item>
+    </style>
+
+    <style name="NUMERO">
+        <item name="android:textColor">#4E5A55</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">#FEB06A</item>
+        <item name="android:textColorHint">#FFD5B0</item>
+        <item name="android:backgroundTint">#FEB06A</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="android:backgroundTint">#FEB06A</item>
+        <item name="android:textColor">#4E5A55</item>
+        <item name="android:thumbTint">#FEB06A</item>
+
+    </style>
+    <style name="BUTTON2">
+        <item name="android:backgroundTint">#FFD5B0</item>
+        <item name="android:textColor">#4E5A55</item>
+        <item name="android:thumbTint">#FFD5B0</item>
+    </style>
+</resources>

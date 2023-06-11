@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SCREEN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prueba"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="-9dp">
+
+    <TextView
+        android:id="@+id/num_temas"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tem_estudiados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titulo_tem_total"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boton_pausar"
+        style="@style/BUTTON"
+        android:backgroundTint="@color/boton_cancelar"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:text="@string/boton_pausar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boton_salir"
+        app:layout_constraintEnd_toStartOf="@+id/boton_empezar"
+        app:layout_constraintStart_toEndOf="@+id/boton_reiniciar"
+        app:layout_constraintTop_toBottomOf="@+id/chronometer" />
+
+    <Button
+        android:id="@+id/boton_salir"
+        style="@style/BUTTON2"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:text="@string/boton_salir"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_pausar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/boton_reiniciar"
+        style="@style/BUTTON"
+        android:backgroundTint="@color/boton_color"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:text="@string/boton_reiniciar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boton_salir"
+        app:layout_constraintEnd_toStartOf="@+id/boton_pausar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chronometer" />
+
+    <Button
+        android:id="@+id/boton_empezar"
+        style="@style/BUTTON"
+        android:backgroundTint="@color/boton_llamar"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:text="@string/boton_empezar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boton_salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/boton_pausar"
+        app:layout_constraintTop_toBottomOf="@+id/chronometer" />
+
+    <Button
+        android:id="@+id/boton_tem_totl"
+        style="@style/BUTTON"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/boton_temas_tot"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boton_tem_est"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_sorteo" />
+
+    <Button
+        android:id="@+id/boton_tem_est"
+        style="@style/BUTTON"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/boton_temas_est"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_crono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_tem_totl" />
+
+    <TextView
+        android:id="@+id/titulo_tem_total"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/titulo_tem_tot"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_tem_est"
+        app:layout_constraintEnd_toStartOf="@+id/num_temas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo_tem_est"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:gravity="center"
+        android:text="@string/titulo_tem_est"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_cant_tem"
+        app:layout_constraintEnd_toStartOf="@+id/tem_estudiados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_tem_total" />
+
+    <TextView
+        android:id="@+id/titulo_cant_tem"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center"
+
+        android:text="@string/label_cant_tem"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ayuda_cant_tem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_tem_est" />
+
+    <SeekBar
+        android:id="@+id/seekBar_bolas"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:max="10"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:progress="1"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_num_bolas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayuda_bolas" />
+
+    <TextView
+        android:id="@+id/titlo_cant_bolas"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center"
+        android:text="@string/label_cant_bol"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ayuda_bolas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_temas_estudiados" />
+
+    <TextView
+        android:id="@+id/ayuda_bolas"
+        android:layout_width="300dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center"
+        android:text="@string/label_bol_ayuda"
+        android:textAlignment="center"
+        style="@style/TEXT"
+        android:textSize="11sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_bolas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlo_cant_bolas" />
+
+    <SeekBar
+        android:id="@+id/seekBar_temas_estudiados"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:max="100"
+        android:progress="0"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/titlo_cant_bolas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayuda_cant_tem" />
+
+    <TextView
+        android:id="@+id/ayuda_cant_tem"
+        android:layout_width="300dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center"
+        android:text="@string/label_tem_ayuda"
+        android:textAlignment="center"
+
+        style="@style/TEXT"
+        android:textSize="11sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_temas_estudiados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cant_tem" />
+
+    <TextView
+        android:id="@+id/titulo_num_bolas"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:gravity="center"
+        android:text="@string/label_bolas"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_prob"
+        app:layout_constraintEnd_toStartOf="@+id/num_bolas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_bolas" />
+
+    <TextView
+        android:id="@+id/titulo_prob"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        style="@style/TEXT"
+        android:layout_marginStart="55dp"
+        android:gravity="center"
+        android:text="@string/label_prob"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_sorteo"
+        app:layout_constraintEnd_toStartOf="@+id/porcentaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_num_bolas" />
+
+    <TextView
+        android:id="@+id/titulo_sorteo"
+        style="@style/TEXT"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center"
+        android:text="@string/titulo_simular"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boton_tem_totl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_prob" />
+
+    <TextView
+        android:id="@+id/titulo_crono"
+        android:layout_width="300dp"
+        style="@style/TEXT"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="65dp"
+        android:gravity="center"
+        android:text="@string/titulo_crono_pruebas"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chronometer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_tem_est" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="64dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boton_pausar"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_crono"></Chronometer>
+
+    <TextView
+        android:id="@+id/num_bolas"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="56dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/porcentaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titulo_num_bolas"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_bolas" />
+
+    <TextView
+        android:id="@+id/porcentaje"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="56dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_sorteo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titulo_prob"
+        app:layout_constraintTop_toBottomOf="@+id/num_bolas" />
+
+    <TextView
+        android:id="@+id/tem_estudiados"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="56dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_cant_tem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titulo_tem_est"
+        app:layout_constraintTop_toBottomOf="@+id/num_temas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

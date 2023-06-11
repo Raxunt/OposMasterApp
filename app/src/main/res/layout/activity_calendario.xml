@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SCREEN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calendario">
+
+    <TextView
+        android:id="@+id/titulo_notas"
+        android:layout_width="350dp"
+        style="@style/TEXT"
+        android:layout_height="30dp"
+        android:text="@string/titulo_nota_planificador"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_calen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_fecha_seleccionada" />
+
+    <Button
+        android:id="@+id/boton_fecha"
+        android:layout_width="wrap_content"
+        style="@style/BUTTON2"
+        android:layout_height="wrap_content"
+        android:onClick="mostrarDatePicker"
+        android:text="@string/boton_seleccionar_fecha"
+        app:layout_constraintBottom_toTopOf="@+id/texto_fecha_seleccionada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texto_fecha_seleccionada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha_seleccionada"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_notas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_fecha" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_calen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/brown_border"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:outlineProvider="bounds"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/boton_guardar_nota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_notas">
+
+        <ScrollView
+            android:id="@+id/scrollView_nota"
+            style="@style/NOTAS"
+            android:layout_width="340dp"
+            android:layout_height="270dp"
+            android:layout_margin="18dp"
+            android:elevation="8dp"
+            android:outlineProvider="bounds"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="507dp">
+
+            <EditText
+                android:id="@+id/texto_anotacion_cal"
+                style="@style/NOTAS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/anotacion_contenido"
+                android:inputType="textMultiLine"
+                android:maxLines="100"
+                android:scrollbars="vertical"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="591dp" />
+
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/boton_guardar_nota"
+        style="@style/BUTTON"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/boton_guardar_contacto"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boton_mostrar_notas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_calen" />
+
+    <Button
+        android:id="@+id/boton_mostrar_notas"
+        style="@style/BUTTON2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/boton_mostrar_notas"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_guardar_nota" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

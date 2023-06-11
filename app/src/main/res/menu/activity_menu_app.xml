@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cronoMenu"
+        android:title="@string/menu_crono_pomodoro"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/crono_menu"
+        android:title="@string/menu_crono_pomodoro"
+        app:showAsAction="always"
+        android:icon="@drawable/cronografo" />
+    <item
+        android:id="@+id/calendario_menu"
+        android:title="@string/menu_calendario"
+        app:showAsAction="always"
+        android:icon="@drawable/calendario" />
+
+
+    <item
+        android:id="@+id/prueba"
+        android:title="@string/menu_prueba"
+        app:showAsAction="always"
+        android:icon="@drawable/estadisticas" />
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/calendarioMenu"
+            android:title="@string/menu_calendario"
+            android:icon="@drawable/calendario" />
+        <item
+            android:id="@+id/pruebasMenu"
+            android:title="@string/menu_prueba"
+            android:icon="@drawable/estadisticas" />
+        <item
+            android:id="@+id/cerrar_sesion"
+            android:title="@string/menu_salir"
+            android:icon="@drawable/cerrarsesion"
+            app:showAsAction="never"/>
+    </group>
+
+</menu>

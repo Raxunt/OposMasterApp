@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fondo">#4E5A55</color>
+    <color name="boton_color">#FEB06A</color>
+    <color name="boton_color_dos">#FFD5B0</color>
+    <color name="tarjeta">#CAC2C2</color>
+    <color name="boton_cancelar">#FE766A</color>
+    <color name="boton_llamar">#8BC34A</color>
+    <color name="boton_salir">#3ED5D5D5</color>
+
+    <color name="colorPendiente">#E7EEED</color>
+    <color name="colorPendiente_texto">#172C44</color>
+
+    <color name="colorExcelente">#90EE90</color>
+    <color name="colorExcelente_texto">#0C0C5A</color>
+
+    <color name="colorMuyBien">#BDFCC9</color>
+    <color name="colorMuyBien_texto">#0F1B49</color>
+
+    <color name="colorNormal">#FFFACD</color>
+    <color name="colorNormal_texto">#101F58</color>
+
+
+    <color name="colorRegular">#F2AE8F</color>
+    <color name="colorRegular_texto">#0A0101</color>
+
+
+    <color name="colorRepasar">#ADD8E6</color>
+    <color name="colorRepasar_texto">#2C1234</color>
+
+    <color name="fondo_modo_oscuro">#4E5A55</color>
+    <color name="fondo_modo_claro">#FFD5B0</color>
+
+    <color name="progress_bar_background">#E0E0E0</color>
+    <color name="progress_bar_color">#2196F3</color>
+</resources>
