@@ -2,6 +2,7 @@ package com.damdos.oposmasterapp;
 
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -50,6 +51,7 @@ public class ModificarTema extends AppCompatActivity {
         numTema = findViewById(R.id.nuemero_tema);
         numTema.setText("Tema: " + numTem);
         nombre = findViewById(R.id.titulo_tema);
+        nombre.setMovementMethod(new ScrollingMovementMethod());
         nombre.setText(nom);
         numRepasos = findViewById(R.id.contador_repasos);
         numRepasos.setText("Repasos: " + numRep);

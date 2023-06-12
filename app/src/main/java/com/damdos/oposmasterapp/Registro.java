@@ -283,7 +283,6 @@ public class Registro extends AppCompatActivity {
         temas_musica.add(new Tema( 68,"Consumo de la Música en la sociedad actual: productos musicales al alcance de todos. Contaminación sonora."));
         temas_musica.add(new Tema( 69,"Teoría de la comunicación aplicada al lenguaje musical: compositor, partitura, intérprete, oyente."));
         temas_musica.add(new Tema( 70,"Métodos y sistemas didácticos actuales de educación musical: Orff-Schulwerk, Dalcroze, Martenot, Kodaly, Willens, Ward…"));
-
         return temas_musica;
     }
 
